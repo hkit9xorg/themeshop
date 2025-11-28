@@ -1,0 +1,14 @@
+{
+  "name": "themeshop",
+  "version": "1.0.0",
+  "description": "shop bán phần mềm",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
