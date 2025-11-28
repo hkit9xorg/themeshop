@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softify - Danh mục sản phẩm</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.5/dist/full.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-100 text-base-content">
+  <header class="border-b border-base-200 bg-base-100/90 backdrop-blur">
+    <div class="navbar mx-auto max-w-7xl px-4 lg:px-8">
+      <div class="navbar-start">
+        <a class="btn btn-ghost px-0 text-xl font-semibold" href="./">Softify</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1 text-sm">
+          <li><a href="./products.html" class="active">Sản phẩm</a></li>
+          <li><a href="./product-detail.html">Chi tiết</a></li>
+          <li><a href="./cart.html">Giỏ hàng</a></li>
+          <li><a href="./checkout.html">Thanh toán</a></li>
+          <li><a href="./account.html">Tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <a class="btn btn-ghost btn-sm" href="./cart.html">Giỏ hàng</a>
+        <a class="btn btn-primary btn-sm" href="./checkout.html">Thanh toán</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-12 lg:px-8">
+    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+      <div>
+        <p class="text-sm uppercase tracking-tight text-base-content/60">Danh mục</p>
+        <h1 class="text-3xl font-semibold">Kho phần mềm và license</h1>
+        <p class="text-base-content/70">Lọc theo nền tảng, ngôn ngữ, mục đích sử dụng để tìm đúng sản phẩm.</p>
+      </div>
+      <div class="join">
+        <input class="input join-item input-bordered w-full md:w-72" placeholder="Tìm kiếm plugin, UI kit, SaaS" />
+        <button class="btn join-item btn-primary">Tìm</button>
+      </div>
+    </div>
+
+    <div class="mt-8 grid gap-4 md:grid-cols-4 lg:grid-cols-5">
+      <div class="space-y-3 rounded-2xl border border-base-200 p-4">
+        <h3 class="font-semibold">Bộ lọc</h3>
+        <div class="form-control">
+          <label class="label cursor-pointer justify-start gap-3">
+            <input type="checkbox" class="checkbox checkbox-primary" checked />
+            <span class="label-text">SaaS trọn đời</span>
+          </label>
+          <label class="label cursor-pointer justify-start gap-3">
+            <input type="checkbox" class="checkbox checkbox-primary" />
+            <span class="label-text">UI/UX Kit</span>
+          </label>
+          <label class="label cursor-pointer justify-start gap-3">
+            <input type="checkbox" class="checkbox checkbox-primary" />
+            <span class="label-text">Plugin CMS</span>
+          </label>
+          <label class="label cursor-pointer justify-start gap-3">
+            <input type="checkbox" class="checkbox checkbox-primary" />
+            <span class="label-text">Template Website</span>
+          </label>
+        </div>
+        <div class="divider"></div>
+        <p class="text-sm font-semibold">Nền tảng</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline">Web</span>
+          <span class="badge badge-outline">iOS</span>
+          <span class="badge badge-outline">Android</span>
+          <span class="badge badge-outline">Desktop</span>
+        </div>
+        <div class="divider"></div>
+        <p class="text-sm font-semibold">Ngôn ngữ</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline">React</span>
+          <span class="badge badge-outline">Vue</span>
+          <span class="badge badge-outline">Tailwind</span>
+          <span class="badge badge-outline">Laravel</span>
+        </div>
+        <div class="divider"></div>
+        <button class="btn btn-ghost btn-sm w-full">Xoá bộ lọc</button>
+      </div>
+
+      <div class="md:col-span-3 lg:col-span-4">
+        <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <div class="breadcrumbs text-sm">
+            <ul>
+              <li><a href="./">Trang chủ</a></li>
+              <li>Sản phẩm</li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-sm text-base-content/60">Sắp xếp:</span>
+            <select class="select select-bordered select-sm">
+              <option>Mới cập nhật</option>
+              <option>Phổ biến</option>
+              <option>Giá tăng dần</option>
+              <option>Giá giảm dần</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <article class="card border border-base-200 bg-base-100 shadow-sm">
+            <div class="card-body gap-3">
+              <div class="flex items-center justify-between text-xs text-base-content/60">
+                <div class="badge badge-primary badge-outline">SaaS</div>
+                <span>Update 1.4.2</span>
+              </div>
+              <h3 class="card-title">Growth CRM</h3>
+              <p class="text-sm text-base-content/70">CRM nhẹ dành cho startup, tích hợp email, webhook và tự động hoá chăm sóc khách hàng.</p>
+              <div class="flex flex-wrap gap-2 text-xs text-base-content/60">
+                <span class="badge badge-outline">Stripe</span>
+                <span class="badge badge-outline">Zapier</span>
+                <span class="badge badge-outline">Webhook</span>
+              </div>
+              <div class="card-actions items-center justify-between">
+                <div>
+                  <p class="text-lg font-semibold">$129</p>
+                  <p class="text-xs text-success">Cập nhật trọn đời</p>
+                </div>
+                <div class="join">
+                  <a class="btn join-item btn-ghost btn-sm" href="./product-detail.html">Chi tiết</a>
+                  <a class="btn join-item btn-primary btn-sm" href="./cart.html">Thêm</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card border border-base-200 bg-base-100 shadow-sm">
+            <div class="card-body gap-3">
+              <div class="flex items-center justify-between text-xs text-base-content/60">
+                <div class="badge badge-secondary badge-outline">UI Kit</div>
+                <span>Update 2.0</span>
+              </div>
+              <h3 class="card-title">Finance UI Library</h3>
+              <p class="text-sm text-base-content/70">120+ màn hình banking và crypto, token hoá màu sắc, hỗ trợ Tailwind + React.</p>
+              <div class="flex flex-wrap gap-2 text-xs text-base-content/60">
+                <span class="badge badge-outline">Figma</span>
+                <span class="badge badge-outline">React</span>
+                <span class="badge badge-outline">Light/Dark</span>
+              </div>
+              <div class="card-actions items-center justify-between">
+                <div>
+                  <p class="text-lg font-semibold">$89</p>
+                  <p class="text-xs text-warning">Giảm 20%</p>
+                </div>
+                <div class="join">
+                  <a class="btn join-item btn-ghost btn-sm" href="./product-detail.html">Chi tiết</a>
+                  <a class="btn join-item btn-primary btn-sm" href="./cart.html">Thêm</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card border border-base-200 bg-base-100 shadow-sm">
+            <div class="card-body gap-3">
+              <div class="flex items-center justify-between text-xs text-base-content/60">
+                <div class="badge badge-accent badge-outline">Plugin</div>
+                <span>Update 0.9</span>
+              </div>
+              <h3 class="card-title">SEO AI Assistant</h3>
+              <p class="text-sm text-base-content/70">Plugin phân tích SEO, gợi ý từ khoá và tự động viết outline blog cho CMS.</p>
+              <div class="flex flex-wrap gap-2 text-xs text-base-content/60">
+                <span class="badge badge-outline">WordPress</span>
+                <span class="badge badge-outline">Headless</span>
+                <span class="badge badge-outline">OpenAI</span>
+              </div>
+              <div class="card-actions items-center justify-between">
+                <div>
+                  <p class="text-lg font-semibold">$59</p>
+                  <p class="text-xs text-success">Hỗ trợ 1-1</p>
+                </div>
+                <div class="join">
+                  <a class="btn join-item btn-ghost btn-sm" href="./product-detail.html">Chi tiết</a>
+                  <a class="btn join-item btn-primary btn-sm" href="./cart.html">Thêm</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card border border-base-200 bg-base-100 shadow-sm">
+            <div class="card-body gap-3">
+              <div class="flex items-center justify-between text-xs text-base-content/60">
+                <div class="badge badge-info badge-outline">Template</div>
+                <span>Update 1.0</span>
+              </div>
+              <h3 class="card-title">SaaS Landing X</h3>
+              <p class="text-sm text-base-content/70">Landing page tối ưu chuyển đổi, tích hợp form với Hubspot và Webflow logic.</p>
+              <div class="flex flex-wrap gap-2 text-xs text-base-content/60">
+                <span class="badge badge-outline">HTML</span>
+                <span class="badge badge-outline">Webflow</span>
+                <span class="badge badge-outline">SEO ready</span>
+              </div>
+              <div class="card-actions items-center justify-between">
+                <div>
+                  <p class="text-lg font-semibold">$49</p>
+                  <p class="text-xs text-base-content/60">Cập nhật 6 tháng</p>
+                </div>
+                <div class="join">
+                  <a class="btn join-item btn-ghost btn-sm" href="./product-detail.html">Chi tiết</a>
+                  <a class="btn join-item btn-primary btn-sm" href="./cart.html">Thêm</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card border border-base-200 bg-base-100 shadow-sm">
+            <div class="card-body gap-3">
+              <div class="flex items-center justify-between text-xs text-base-content/60">
+                <div class="badge badge-warning badge-outline">Add-on</div>
+                <span>Update 3.1</span>
+              </div>
+              <h3 class="card-title">Analytics Booster</h3>
+              <p class="text-sm text-base-content/70">Bảng điều khiển realtime cho marketing, kết nối GA4, Segment, BigQuery.</p>
+              <div class="flex flex-wrap gap-2 text-xs text-base-content/60">
+                <span class="badge badge-outline">Next.js</span>
+                <span class="badge badge-outline">GA4</span>
+                <span class="badge badge-outline">BigQuery</span>
+              </div>
+              <div class="card-actions items-center justify-between">
+                <div>
+                  <p class="text-lg font-semibold">$119</p>
+                  <p class="text-xs text-success">Bao gồm support</p>
+                </div>
+                <div class="join">
+                  <a class="btn join-item btn-ghost btn-sm" href="./product-detail.html">Chi tiết</a>
+                  <a class="btn join-item btn-primary btn-sm" href="./cart.html">Thêm</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card border border-base-200 bg-base-100 shadow-sm">
+            <div class="card-body gap-3">
+              <div class="flex items-center justify-between text-xs text-base-content/60">
+                <div class="badge badge-success badge-outline">Bundle</div>
+                <span>Update 1.2</span>
+              </div>
+              <h3 class="card-title">Startups Toolkit</h3>
+              <p class="text-sm text-base-content/70">Gói 5 sản phẩm (CRM, Landing, UI Kit, Email, Analytics) dành cho startup.</p>
+              <div class="flex flex-wrap gap-2 text-xs text-base-content/60">
+                <span class="badge badge-outline">Bundle</span>
+                <span class="badge badge-outline">Onboarding</span>
+                <span class="badge badge-outline">Mentoring</span>
+              </div>
+              <div class="card-actions items-center justify-between">
+                <div>
+                  <p class="text-lg font-semibold">$249</p>
+                  <p class="text-xs text-success">Tiết kiệm 35%</p>
+                </div>
+                <div class="join">
+                  <a class="btn join-item btn-ghost btn-sm" href="./product-detail.html">Chi tiết</a>
+                  <a class="btn join-item btn-primary btn-sm" href="./cart.html">Thêm</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-8 flex items-center justify-between rounded-2xl border border-base-200 p-4">
+          <div class="space-y-1">
+            <p class="font-semibold">Không tìm thấy sản phẩm?</p>
+            <p class="text-sm text-base-content/70">Gửi yêu cầu tính năng hoặc sản phẩm bạn cần, chúng tôi sẽ tìm giúp.</p>
+          </div>
+          <a class="btn btn-outline" href="./account.html">Tạo yêu cầu</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-base-200 bg-base-100 py-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <p class="text-sm text-base-content/70">© Softify 2024 - Bản quyền sản phẩm thuộc về nhà phát triển.</p>
+      <div class="flex gap-3 text-sm text-base-content/70">
+        <a class="link" href="#">Chính sách</a>
+        <a class="link" href="#">Điều khoản</a>
+        <a class="link" href="#">Hỗ trợ</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

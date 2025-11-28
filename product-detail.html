@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softify - Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.5/dist/full.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-100 text-base-content">
+  <header class="border-b border-base-200 bg-base-100/90 backdrop-blur">
+    <div class="navbar mx-auto max-w-7xl px-4 lg:px-8">
+      <div class="navbar-start">
+        <a class="btn btn-ghost px-0 text-xl font-semibold" href="./">Softify</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1 text-sm">
+          <li><a href="./products.html">Sản phẩm</a></li>
+          <li><a href="./product-detail.html" class="active">Chi tiết</a></li>
+          <li><a href="./cart.html">Giỏ hàng</a></li>
+          <li><a href="./checkout.html">Thanh toán</a></li>
+          <li><a href="./account.html">Tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <a class="btn btn-ghost btn-sm" href="./products.html">Quay lại danh mục</a>
+        <a class="btn btn-primary btn-sm" href="./cart.html">Thêm vào giỏ</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-12 lg:px-8">
+    <div class="breadcrumbs text-sm text-base-content/60">
+      <ul>
+        <li><a href="./">Trang chủ</a></li>
+        <li><a href="./products.html">Sản phẩm</a></li>
+        <li>SEO AI Assistant</li>
+      </ul>
+    </div>
+
+    <section class="mt-6 grid gap-8 lg:grid-cols-[1.6fr_1fr]">
+      <div class="space-y-6">
+        <div class="rounded-3xl border border-base-200 p-6 shadow-sm">
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="badge badge-accent badge-outline">Plugin CMS</div>
+            <div class="badge badge-ghost">Version 0.9</div>
+            <div class="badge badge-outline">Lifetime update</div>
+          </div>
+          <h1 class="mt-3 text-3xl font-semibold">SEO AI Assistant</h1>
+          <p class="mt-2 text-base-content/70">Plugin phân tích SEO, gợi ý từ khoá, đề xuất nội dung và xuất report tự động cho CMS. Hỗ trợ WordPress, headless CMS và API mở.</p>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <div class="flex items-center gap-3 rounded-2xl bg-base-200 p-4">
+              <div class="badge badge-outline badge-primary">AI</div>
+              <div>
+                <p class="font-semibold">Đề xuất từ khoá</p>
+                <p class="text-sm text-base-content/70">Gợi ý keyword dài, ưu tiên thị trường VN/US.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 rounded-2xl bg-base-200 p-4">
+              <div class="badge badge-outline badge-secondary">Content</div>
+              <div>
+                <p class="font-semibold">Viết outline tự động</p>
+                <p class="text-sm text-base-content/70">Sinh tiêu đề, mục lục, call-to-action theo brand voice.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 rounded-2xl bg-base-200 p-4">
+              <div class="badge badge-outline badge-info">Analytics</div>
+              <div>
+                <p class="font-semibold">Theo dõi thứ hạng</p>
+                <p class="text-sm text-base-content/70">Báo cáo vị trí từ khoá hằng tuần, xuất CSV.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 rounded-2xl bg-base-200 p-4">
+              <div class="badge badge-outline badge-success">Support</div>
+              <div>
+                <p class="font-semibold">Onboarding 1-1</p>
+                <p class="text-sm text-base-content/70">Kết nối Slack, được hỗ trợ cấu hình và đào tạo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs-boxed tabs-lg bg-base-200 p-2 rounded-2xl">
+          <a class="tab tab-active">Mô tả</a>
+          <a class="tab">Hướng dẫn</a>
+          <a class="tab">Đánh giá (126)</a>
+        </div>
+        <div class="space-y-4 text-sm leading-relaxed text-base-content/80">
+          <p>SEO AI Assistant giúp đội ngũ content tăng tốc nghiên cứu từ khoá, viết outline và tối ưu nội dung. Plugin được viết theo kiến trúc plugin-first, dễ dàng mở rộng qua webhooks.</p>
+          <ul class="list-disc space-y-2 pl-6">
+            <li>Tích hợp WordPress, Ghost, Sanity, Strapi, hỗ trợ headless.</li>
+            <li>API key riêng, giới hạn call theo plan, theo dõi usage.</li>
+            <li>Hệ thống prompt có thể tuỳ chỉnh theo brand guideline.</li>
+            <li>Đồng bộ với Google Search Console, GA4, xuất báo cáo PDF.</li>
+          </ul>
+          <div class="alert">
+            <div>
+              <h3 class="font-semibold">Ghi chú bản quyền</h3>
+              <p class="text-sm">Mỗi license dùng cho một domain production, staging không giới hạn. Liên hệ nếu cần thêm chỗ.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-base-200 p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm uppercase tracking-tight text-base-content/60">Sản phẩm liên quan</p>
+              <h3 class="text-xl font-semibold">Khách hàng cũng mua</h3>
+            </div>
+            <a class="btn btn-ghost btn-sm" href="./products.html">Xem tất cả</a>
+          </div>
+          <div class="mt-4 grid gap-4 md:grid-cols-3">
+            <div class="card bg-base-100 shadow-sm">
+              <div class="card-body gap-3">
+                <h4 class="card-title text-base">Content Brief Generator</h4>
+                <p class="text-sm text-base-content/70">Sinh brief bài viết và checklist SEO.</p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="font-semibold">$49</span>
+                  <a class="link" href="./product-detail.html">Xem</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm">
+              <div class="card-body gap-3">
+                <h4 class="card-title text-base">Link Tracker Pro</h4>
+                <p class="text-sm text-base-content/70">Theo dõi backlink và báo lỗi 404.</p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="font-semibold">$79</span>
+                  <a class="link" href="./product-detail.html">Xem</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-sm">
+              <div class="card-body gap-3">
+                <h4 class="card-title text-base">Analytics Booster</h4>
+                <p class="text-sm text-base-content/70">Dashboard realtime GA4 & BigQuery.</p>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="font-semibold">$119</span>
+                  <a class="link" href="./product-detail.html">Xem</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div class="rounded-3xl border border-base-200 p-6 shadow">
+          <div class="flex items-center justify-between">
+            <p class="text-sm text-base-content/60">Giá</p>
+            <div class="badge badge-outline">Giảm 15% tuần này</div>
+          </div>
+          <p class="text-3xl font-semibold">$59</p>
+          <p class="text-sm text-base-content/70">Hỗ trợ, cập nhật trọn đời cho 1 domain.</p>
+          <div class="mt-4 space-y-3">
+            <label class="label cursor-pointer justify-between rounded-2xl border border-base-300 px-4 py-3">
+              <span>Starter (1 domain)</span>
+              <input type="radio" name="plan" class="radio" checked />
+            </label>
+            <label class="label cursor-pointer justify-between rounded-2xl border border-base-300 px-4 py-3">
+              <span>Agency (5 domain)</span>
+              <input type="radio" name="plan" class="radio" />
+            </label>
+            <label class="label cursor-pointer justify-between rounded-2xl border border-base-300 px-4 py-3">
+              <span>Enterprise (10 domain + SLA)</span>
+              <input type="radio" name="plan" class="radio" />
+            </label>
+          </div>
+          <div class="mt-4 flex flex-col gap-3">
+            <a class="btn btn-primary" href="./cart.html">Thêm vào giỏ</a>
+            <a class="btn btn-outline" href="./checkout.html">Mua ngay</a>
+            <button class="btn btn-ghost">Dùng thử demo</button>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-base-200 p-6 shadow">
+          <h3 class="text-lg font-semibold">Thông tin kỹ thuật</h3>
+          <ul class="mt-3 space-y-2 text-sm text-base-content/70">
+            <li>• Yêu cầu PHP 8+, Node 18+, MySQL 8.</li>
+            <li>• Tích hợp: Google Search Console, OpenAI, Pinecone.</li>
+            <li>• Đóng gói Docker, có CLI migrate & seed.</li>
+            <li>• Hướng dẫn triển khai trên Vercel/Netlify.</li>
+          </ul>
+          <div class="mt-4 flex gap-2">
+            <span class="badge badge-outline">API docs</span>
+            <span class="badge badge-outline">Changelog</span>
+            <span class="badge badge-outline">Webhook</span>
+          </div>
+        </div>
+
+        <div class="rounded-3xl bg-base-100 p-6 shadow border border-base-200">
+          <div class="flex items-center justify-between">
+            <h3 class="text-lg font-semibold">Hỏi đáp</h3>
+            <a class="btn btn-ghost btn-xs" href="./account.html">Gửi câu hỏi</a>
+          </div>
+          <div class="join join-vertical mt-3 w-full">
+            <div class="collapse collapse-arrow join-item border border-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-sm font-medium">Key license dùng cho bao nhiêu website?</div>
+              <div class="collapse-content text-sm text-base-content/70">Starter cho 1 domain production, Agency cho 5 domain, Enterprise cho 10 domain và có SLA.</div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-sm font-medium">Có hoàn tiền không?</div>
+              <div class="collapse-content text-sm text-base-content/70">Hoàn tiền trong 14 ngày nếu sản phẩm không đáp ứng nhu cầu.</div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-base-200">
+              <input type="checkbox" />
+              <div class="collapse-title text-sm font-medium">Hỗ trợ kỹ thuật thế nào?</div>
+              <div class="collapse-content text-sm text-base-content/70">Có kênh Slack, email, và tuỳ chọn hỗ trợ triển khai có phí.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

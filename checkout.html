@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softify - Thanh toán</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.5/dist/full.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-100 text-base-content">
+  <header class="border-b border-base-200 bg-base-100/90 backdrop-blur">
+    <div class="navbar mx-auto max-w-7xl px-4 lg:px-8">
+      <div class="navbar-start">
+        <a class="btn btn-ghost px-0 text-xl font-semibold" href="./">Softify</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1 text-sm">
+          <li><a href="./products.html">Sản phẩm</a></li>
+          <li><a href="./product-detail.html">Chi tiết</a></li>
+          <li><a href="./cart.html">Giỏ hàng</a></li>
+          <li><a class="active" href="./checkout.html">Thanh toán</a></li>
+          <li><a href="./account.html">Tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <a class="btn btn-ghost btn-sm" href="./cart.html">Quay lại giỏ</a>
+        <a class="btn btn-primary btn-sm" href="./checkout.html">Thanh toán</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-12 lg:px-6">
+    <div class="breadcrumbs text-sm text-base-content/60">
+      <ul>
+        <li><a href="./">Trang chủ</a></li>
+        <li><a href="./cart.html">Giỏ hàng</a></li>
+        <li>Thanh toán</li>
+      </ul>
+    </div>
+
+    <div class="mt-6 grid gap-8 lg:grid-cols-[1.6fr_1fr] lg:items-start">
+      <section class="space-y-6">
+        <div class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <div class="steps steps-horizontal w-full text-sm">
+            <div class="step step-primary">Thông tin</div>
+            <div class="step step-primary">Thanh toán</div>
+            <div class="step">Kích hoạt</div>
+          </div>
+          <div class="mt-4 grid gap-6 md:grid-cols-2">
+            <label class="form-control">
+              <span class="label-text">Họ và tên</span>
+              <input class="input input-bordered" placeholder="Nguyễn Văn A" />
+            </label>
+            <label class="form-control">
+              <span class="label-text">Email công ty</span>
+              <input type="email" class="input input-bordered" placeholder="you@company.com" />
+            </label>
+            <label class="form-control">
+              <span class="label-text">Số điện thoại</span>
+              <input class="input input-bordered" placeholder="(+84) 000 000" />
+            </label>
+            <label class="form-control">
+              <span class="label-text">Quốc gia</span>
+              <select class="select select-bordered">
+                <option>Việt Nam</option>
+                <option>Singapore</option>
+                <option>Hoa Kỳ</option>
+                <option>Nhật Bản</option>
+              </select>
+            </label>
+            <label class="form-control md:col-span-2">
+              <span class="label-text">Địa chỉ xuất hoá đơn (VAT)</span>
+              <input class="input input-bordered" placeholder="Số nhà, đường, phường" />
+            </label>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-4">
+            <label class="label cursor-pointer justify-start gap-3">
+              <input type="checkbox" class="checkbox checkbox-primary" checked />
+              <span>Gửi hoá đơn VAT về email</span>
+            </label>
+            <label class="label cursor-pointer justify-start gap-3">
+              <input type="checkbox" class="checkbox" />
+              <span>Lưu thông tin cho lần sau</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <h2 class="text-xl font-semibold">Phương thức thanh toán</h2>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <label class="card border border-base-200 bg-base-50 p-4 shadow-sm">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="payment" class="radio" checked />
+                <div>
+                  <p class="font-semibold">Thẻ / Ví điện tử</p>
+                  <p class="text-sm text-base-content/70">Stripe, Visa, Master, Apple Pay</p>
+                </div>
+              </div>
+            </label>
+            <label class="card border border-base-200 bg-base-50 p-4 shadow-sm">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="payment" class="radio" />
+                <div>
+                  <p class="font-semibold">Chuyển khoản</p>
+                  <p class="text-sm text-base-content/70">Tài khoản công ty, tự động đối soát</p>
+                </div>
+              </div>
+            </label>
+            <label class="card border border-base-200 bg-base-50 p-4 shadow-sm">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="payment" class="radio" />
+                <div>
+                  <p class="font-semibold">PayPal</p>
+                  <p class="text-sm text-base-content/70">Hỗ trợ invoice đa tiền tệ</p>
+                </div>
+              </div>
+            </label>
+            <label class="card border border-base-200 bg-base-50 p-4 shadow-sm">
+              <div class="flex items-center gap-3">
+                <input type="radio" name="payment" class="radio" />
+                <div>
+                  <p class="font-semibold">Crypto</p>
+                  <p class="text-sm text-base-content/70">USDT, USDC, BTC qua ví doanh nghiệp</p>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <label class="form-control">
+              <span class="label-text">Tên trên thẻ</span>
+              <input class="input input-bordered" placeholder="NGUYEN VAN A" />
+            </label>
+            <label class="form-control">
+              <span class="label-text">Số thẻ</span>
+              <input class="input input-bordered" placeholder="4242 4242 4242 4242" />
+            </label>
+            <label class="form-control">
+              <span class="label-text">Ngày hết hạn</span>
+              <input class="input input-bordered" placeholder="MM/YY" />
+            </label>
+            <label class="form-control">
+              <span class="label-text">CVC</span>
+              <input class="input input-bordered" placeholder="123" />
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <aside class="space-y-4 rounded-3xl border border-base-200 bg-base-50 p-6 shadow-sm">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-semibold">Đơn hàng</h2>
+          <a class="link text-sm" href="./cart.html">Chỉnh sửa</a>
+        </div>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-center justify-between">
+            <span>Infinity Dashboard (UI Kit)</span>
+            <span class="font-semibold">$89</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>LaunchFlow Automation (SaaS)</span>
+            <span class="font-semibold">$149</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>SEO AI Assistant (Plugin)</span>
+            <span class="font-semibold">$59</span>
+          </div>
+          <div class="divider"></div>
+          <div class="flex items-center justify-between">
+            <span>Thuế VAT</span>
+            <span class="font-semibold">$20</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>Mã giảm giá</span>
+            <span class="font-semibold text-success">-$30</span>
+          </div>
+          <div class="flex items-center justify-between text-lg font-semibold">
+            <span>Tổng</span>
+            <span>$287</span>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="alert alert-success">
+            <div>
+              <h3 class="font-semibold">Kích hoạt tự động</h3>
+              <p class="text-sm">License và file sẽ gửi qua email sau khi thanh toán thành công.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary w-full">Hoàn tất thanh toán</button>
+          <p class="text-xs text-base-content/60">Bằng cách tiếp tục, bạn đồng ý với điều khoản dịch vụ và chính sách hoàn tiền.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
