@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softify - Tài khoản & Hỗ trợ</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.5/dist/full.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-100 text-base-content">
+  <header class="border-b border-base-200 bg-base-100/90 backdrop-blur">
+    <div class="navbar mx-auto max-w-7xl px-4 lg:px-8">
+      <div class="navbar-start">
+        <a class="btn btn-ghost px-0 text-xl font-semibold" href="./">Softify</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1 text-sm">
+          <li><a href="./products.html">Sản phẩm</a></li>
+          <li><a href="./product-detail.html">Chi tiết</a></li>
+          <li><a href="./cart.html">Giỏ hàng</a></li>
+          <li><a href="./checkout.html">Thanh toán</a></li>
+          <li><a class="active" href="./account.html">Tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <a class="btn btn-ghost btn-sm" href="./products.html">Mua thêm</a>
+        <a class="btn btn-primary btn-sm" href="#">Đăng xuất</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-12 lg:px-8">
+    <div class="flex flex-col gap-6 lg:flex-row">
+      <aside class="w-full max-w-xs rounded-3xl border border-base-200 bg-base-50 p-6 shadow-sm">
+        <div class="flex items-center gap-3">
+          <div class="avatar placeholder">
+            <div class="w-12 rounded-full bg-primary/10 text-primary">NV</div>
+          </div>
+          <div>
+            <p class="font-semibold">Nguyễn Văn A</p>
+            <p class="text-sm text-base-content/60">you@company.com</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <ul class="menu bg-base-50">
+          <li><a class="active">Tổng quan</a></li>
+          <li><a href="#orders">Đơn hàng</a></li>
+          <li><a href="#licenses">License</a></li>
+          <li><a href="#support">Hỗ trợ</a></li>
+          <li><a href="#billing">Thanh toán</a></li>
+        </ul>
+      </aside>
+
+      <section class="flex-1 space-y-8">
+        <div class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <p class="text-sm uppercase tracking-tight text-base-content/60">Tổng quan</p>
+              <h1 class="text-2xl font-semibold">Bảng điều khiển tài khoản</h1>
+            </div>
+            <div class="join">
+              <button class="btn join-item btn-outline btn-sm">Xuất hoá đơn</button>
+              <button class="btn join-item btn-primary btn-sm">Nạp thêm seat</button>
+            </div>
+          </div>
+          <div class="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div class="stat bg-base-200 rounded-2xl">
+              <div class="stat-title">License đang hoạt động</div>
+              <div class="stat-value">12</div>
+              <div class="stat-desc">4 license cần gia hạn</div>
+            </div>
+            <div class="stat bg-base-200 rounded-2xl">
+              <div class="stat-title">Tải xuống còn lại</div>
+              <div class="stat-value">32</div>
+              <div class="stat-desc">Reset mỗi tháng</div>
+            </div>
+            <div class="stat bg-base-200 rounded-2xl">
+              <div class="stat-title">Ticket hỗ trợ</div>
+              <div class="stat-value">3</div>
+              <div class="stat-desc text-warning">1 ticket đang chờ</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="orders" class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold">Đơn hàng gần đây</h2>
+            <a class="btn btn-ghost btn-sm" href="#">Xem tất cả</a>
+          </div>
+          <div class="mt-4 overflow-x-auto">
+            <table class="table text-sm">
+              <thead>
+                <tr class="text-base-content/60">
+                  <th>Mã đơn</th>
+                  <th>Sản phẩm</th>
+                  <th>Ngày</th>
+                  <th>Trạng thái</th>
+                  <th>Tổng</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#INV-2312</td>
+                  <td>UI Kit + Plugin SEO</td>
+                  <td>12/01/2024</td>
+                  <td><span class="badge badge-success badge-outline">Đã kích hoạt</span></td>
+                  <td>$199</td>
+                </tr>
+                <tr>
+                  <td>#INV-2280</td>
+                  <td>Bundle SaaS Starter</td>
+                  <td>20/12/2023</td>
+                  <td><span class="badge badge-ghost">Đang xử lý</span></td>
+                  <td>$249</td>
+                </tr>
+                <tr>
+                  <td>#INV-2201</td>
+                  <td>Automation Studio</td>
+                  <td>01/11/2023</td>
+                  <td><span class="badge badge-outline badge-warning">Cần gia hạn</span></td>
+                  <td>$129</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="licenses" class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold">License & tải xuống</h2>
+            <div class="join">
+              <button class="btn join-item btn-outline btn-sm">Tải file</button>
+              <button class="btn join-item btn-primary btn-sm">Copy key</button>
+            </div>
+          </div>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <div class="card bg-base-200">
+              <div class="card-body gap-3">
+                <div class="badge badge-primary badge-outline">UI Kit</div>
+                <h3 class="card-title">Infinity Dashboard</h3>
+                <p class="text-sm text-base-content/70">Key: INF-9ASD-2345</p>
+                <p class="text-xs text-base-content/60">Đã kích hoạt trên domain: app.fintech.vn</p>
+                <div class="flex items-center justify-between">
+                  <span class="badge badge-ghost">Cập nhật 1.4.2</span>
+                  <a class="link text-sm" href="#">Changelog</a>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-base-200">
+              <div class="card-body gap-3">
+                <div class="badge badge-accent badge-outline">Plugin</div>
+                <h3 class="card-title">SEO AI Assistant</h3>
+                <p class="text-sm text-base-content/70">Key: SEO-7HSX-9988</p>
+                <p class="text-xs text-base-content/60">Chưa kích hoạt - 3 lượt tải</p>
+                <div class="flex items-center justify-between">
+                  <span class="badge badge-ghost">Cập nhật 0.9</span>
+                  <a class="link text-sm" href="#">Tải xuống</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="support" class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold">Trung tâm hỗ trợ</h2>
+            <button class="btn btn-primary btn-sm">Tạo ticket</button>
+          </div>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <div class="card bg-base-200">
+              <div class="card-body gap-3">
+                <h3 class="card-title">Ticket #3213</h3>
+                <p class="text-sm text-base-content/70">Cần hỗ trợ triển khai API webhook</p>
+                <div class="badge badge-warning badge-outline">Đang xử lý</div>
+              </div>
+            </div>
+            <div class="card bg-base-200">
+              <div class="card-body gap-3">
+                <h3 class="card-title">Ticket #3201</h3>
+                <p class="text-sm text-base-content/70">Yêu cầu thêm domain staging</p>
+                <div class="badge badge-success badge-outline">Đã giải quyết</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 rounded-2xl bg-base-200 p-4">
+            <h3 class="font-semibold">Tài liệu nhanh</h3>
+            <p class="text-sm text-base-content/70">Sử dụng API, webhook, bảo mật key license và cập nhật.</p>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="badge badge-outline">API docs</span>
+              <span class="badge badge-outline">Cách kích hoạt license</span>
+              <span class="badge badge-outline">Hướng dẫn tự động hoá</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="billing" class="rounded-3xl border border-base-200 bg-base-100 p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold">Thông tin thanh toán</h2>
+            <button class="btn btn-ghost btn-sm">Cập nhật</button>
+          </div>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            <div class="card bg-base-200">
+              <div class="card-body gap-3">
+                <p class="font-semibold">Thẻ Visa •••• 4242</p>
+                <p class="text-sm text-base-content/70">Hết hạn 12/2026</p>
+                <button class="btn btn-ghost btn-sm w-fit">Thiết lập mặc định</button>
+              </div>
+            </div>
+            <div class="card bg-base-200">
+              <div class="card-body gap-3">
+                <p class="font-semibold">Thanh toán qua ngân hàng</p>
+                <p class="text-sm text-base-content/70">Techcombank - Softify JSC</p>
+                <button class="btn btn-outline btn-sm w-fit">Xem hướng dẫn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

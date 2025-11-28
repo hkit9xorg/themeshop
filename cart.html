@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softify - Giỏ hàng</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.5/dist/full.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-100 text-base-content">
+  <header class="border-b border-base-200 bg-base-100/90 backdrop-blur">
+    <div class="navbar mx-auto max-w-7xl px-4 lg:px-8">
+      <div class="navbar-start">
+        <a class="btn btn-ghost px-0 text-xl font-semibold" href="./">Softify</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1 text-sm">
+          <li><a href="./products.html">Sản phẩm</a></li>
+          <li><a href="./product-detail.html">Chi tiết</a></li>
+          <li><a class="active" href="./cart.html">Giỏ hàng</a></li>
+          <li><a href="./checkout.html">Thanh toán</a></li>
+          <li><a href="./account.html">Tài khoản</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-2">
+        <a class="btn btn-ghost btn-sm" href="./products.html">Tiếp tục mua</a>
+        <a class="btn btn-primary btn-sm" href="./checkout.html">Thanh toán</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-12 lg:px-6">
+    <div class="flex flex-col gap-6 lg:flex-row lg:items-start">
+      <section class="flex-1 space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-tight text-base-content/60">Giỏ hàng</p>
+            <h1 class="text-3xl font-semibold">3 sản phẩm đang chờ thanh toán</h1>
+          </div>
+          <button class="btn btn-ghost btn-sm">Xoá tất cả</button>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-base-200">
+          <table class="table">
+            <thead>
+              <tr class="text-sm text-base-content/60">
+                <th>Sản phẩm</th>
+                <th>License</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-4">
+                    <div class="avatar placeholder">
+                      <div class="w-12 rounded-full bg-primary/10 text-primary">UI</div>
+                    </div>
+                    <div>
+                      <p class="font-semibold">Infinity Dashboard</p>
+                      <p class="text-sm text-base-content/60">UI Kit - Figma + React</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <select class="select select-sm select-bordered">
+                    <option>Team (10 seat)</option>
+                    <option>Startup (5 seat)</option>
+                    <option>Enterprise (30 seat)</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="join">
+                    <button class="btn join-item btn-sm">-</button>
+                    <button class="btn join-item btn-sm btn-ghost">1</button>
+                    <button class="btn join-item btn-sm">+</button>
+                  </div>
+                </td>
+                <td class="font-semibold">$89</td>
+                <td><button class="btn btn-ghost btn-sm">Xoá</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-4">
+                    <div class="avatar placeholder">
+                      <div class="w-12 rounded-full bg-secondary/10 text-secondary">SA</div>
+                    </div>
+                    <div>
+                      <p class="font-semibold">LaunchFlow Automation</p>
+                      <p class="text-sm text-base-content/60">SaaS - Billing & email</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <select class="select select-sm select-bordered">
+                    <option>Lifetime</option>
+                    <option>1 năm</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="join">
+                    <button class="btn join-item btn-sm">-</button>
+                    <button class="btn join-item btn-sm btn-ghost">1</button>
+                    <button class="btn join-item btn-sm">+</button>
+                  </div>
+                </td>
+                <td class="font-semibold">$149</td>
+                <td><button class="btn btn-ghost btn-sm">Xoá</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="flex items-center gap-4">
+                    <div class="avatar placeholder">
+                      <div class="w-12 rounded-full bg-accent/10 text-accent">PL</div>
+                    </div>
+                    <div>
+                      <p class="font-semibold">SEO AI Assistant</p>
+                      <p class="text-sm text-base-content/60">Plugin SEO cho CMS</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <select class="select select-sm select-bordered">
+                    <option>Starter</option>
+                    <option>Agency</option>
+                    <option>Enterprise</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="join">
+                    <button class="btn join-item btn-sm">-</button>
+                    <button class="btn join-item btn-sm btn-ghost">1</button>
+                    <button class="btn join-item btn-sm">+</button>
+                  </div>
+                </td>
+                <td class="font-semibold">$59</td>
+                <td><button class="btn btn-ghost btn-sm">Xoá</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="rounded-2xl border border-base-200 p-4">
+          <div class="flex flex-wrap items-center gap-3">
+            <input class="input input-bordered w-full max-w-xs" placeholder="Nhập mã giảm giá" />
+            <button class="btn btn-primary">Áp dụng</button>
+            <span class="text-sm text-base-content/60">Áp dụng được với gói Lifetime & Team</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="w-full rounded-3xl border border-base-200 bg-base-50 p-6 shadow-sm lg:w-96">
+        <h2 class="text-xl font-semibold">Tóm tắt thanh toán</h2>
+        <div class="mt-4 space-y-3 text-sm text-base-content/80">
+          <div class="flex items-center justify-between">
+            <span>Tạm tính</span>
+            <span class="font-semibold">$297</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>Thuế (VAT)</span>
+            <span class="font-semibold">$20</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>Khuyến mãi</span>
+            <span class="font-semibold text-success">-$30</span>
+          </div>
+          <div class="divider my-3"></div>
+          <div class="flex items-center justify-between text-lg font-semibold">
+            <span>Tổng</span>
+            <span>$287</span>
+          </div>
+        </div>
+        <div class="mt-6 space-y-2">
+          <a class="btn btn-primary w-full" href="./checkout.html">Thanh toán</a>
+          <a class="btn btn-outline w-full" href="./products.html">Tiếp tục mua sắm</a>
+          <label class="label cursor-pointer justify-start gap-3 text-sm text-base-content/70">
+            <input type="checkbox" class="checkbox checkbox-sm" checked />
+            <span>Gửi hoá đơn về email</span>
+          </label>
+          <p class="text-xs text-base-content/60">Thanh toán an toàn qua Stripe, PayPal, chuyển khoản và crypto.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
